@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+  android:background="#707070"
+  >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="120dp"
+      android:layout_marginTop="10dp"
+      android:layout_margin="10dp"
+      style="@style/Shape.Rounded"
+      app:shapeAppearanceOverlay="@style/Shape.Rounded.Top.Right"
+      android:background="@color/alternative"
+      app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+          android:id="@+id/materialButton"
+          android:layout_width="50dp"
+          android:layout_height="70dp"
+          android:backgroundTint="@color/primary"
+          android:insetTop="0dp"
+          android:insetBottom="0dp"
+          android:paddingStart="7dp"
+          app:icon="@drawable/check_small_24"
+          app:iconSize="40dp"
+          app:iconTint="@color/white"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:shapeAppearanceOverlay="@style/Shape.Rounded.Top.Right"
+          />
+
+        <com.google.android.material.button.MaterialButton
+          android:id="@+id/materialButton2"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_margin="0dp"
+          android:insetTop="0dp"
+          android:insetBottom="0dp"
+          app:shapeAppearanceOverlay="@style/Shape.Rounded.Bottom.Right"
+          android:paddingStart="17dp"
+          android:backgroundTint="@color/tertiary"
+          app:iconSize="15dp"
+          app:icon="@drawable/svg_close"
+          app:iconTint="@color/black"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="400dp"
+      android:background="@color/white"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+          android:id="@+id/editTo"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_marginStart="16dp"
+          android:layout_marginTop="32dp"
+          android:layout_marginEnd="16dp"
+
+          android:background="@drawable/textedit_rounded_shape"
+          android:hint="Ingrese texto aquí"
+          android:inputType="text"
+          android:padding="16dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/editFrom" />
+
+        <TextView
+          android:id="@+id/textTo"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:layout_marginBottom="5dp"
+          android:text="Destino"
+          android:textColor="@color/grey"
+          app:layout_constraintBottom_toTopOf="@+id/editTo"
+          app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+          android:id="@+id/editFrom"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_marginStart="16dp"
+          android:layout_marginTop="52dp"
+          android:layout_marginEnd="16dp"
+          android:background="@drawable/textedit_rounded_shape"
+
+          android:hint="Ingrese texto aquí"
+          android:inputType="text"
+          android:padding="16dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+
+          app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+          android:id="@+id/textFrom"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:layout_marginBottom="5dp"
+          android:text="Origen"
+          android:textColor="@color/grey"
+          app:layout_constraintBottom_toTopOf="@+id/editFrom"
+          app:layout_constraintStart_toStartOf="parent" />
+
+
+        <TextView
+          android:id="@+id/textPrice"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:layout_marginBottom="5dp"
+          android:text="Ofreco tu precio"
+          android:textColor="@color/grey"
+          app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+          app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+          android:id="@+id/linearLayout"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_margin="15dp"
+          app:layout_constraintBottom_toTopOf="@+id/btnRequest"
+          app:layout_constraintEnd_toEndOf="parent"
+          android:gravity="fill_horizontal"
+          app:layout_constraintHorizontal_bias="0.448"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/editTo"
+          app:layout_constraintVertical_bias="1.0">
+
+            <EditText
+              android:id="@+id/editPrice"
+              android:layout_width="150dp"
+              android:layout_height="50dp"
+              android:background="@drawable/textedit_rounded_shape"
+              android:inputType="text"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+              android:id="@+id/btnEditPrice"
+              style="@style/BtnTertiary"
+              android:layout_width="40dp"
+              android:layout_height="40dp"
+              android:layout_marginStart="10dp"
+              android:insetTop="0dp"
+              android:insetBottom="0dp"
+              android:paddingStart="12dp"
+              app:icon="@drawable/svg_pen"
+              app:iconSize="15dp"
+              app:iconTint="@color/primary"
+              app:shapeAppearanceOverlay="@style/Shape.Rounded" />
+
+            <Spinner
+              android:id="@+id/spinner"
+              android:layout_width="150dp"
+              android:layout_height="50dp"
+              android:background="@drawable/textedit_rounded_shape"
+              app:layout_constraintBottom_toTopOf="@+id/btnRequest"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/editTo" />
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+          android:id="@+id/btnRequest"
+          android:layout_width="match_parent"
+          android:layout_height="70dp"
+          android:layout_marginHorizontal="15dp"
+          android:layout_marginBottom="52dp"
+          android:text="Solicitar"
+          android:textAllCaps="false"
+          style="@style/BtnPrimary"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:shapeAppearanceOverlay="@style/Shape.Rounded" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

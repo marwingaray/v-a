@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#e8e8e8"
+  tools:context=".ui.dashboard.DashboardFragment">
+
+  <TextView
+    android:id="@+id/text_dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:text="buttons"
+    android:textAlignment="center"
+    android:textSize="20sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.589" />
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginHorizontal="5dp"
+    android:background="#fff"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.888"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <Button
+      android:id="@+id/elevatedButton6"
+      style="@style/Widget.Material3.Button.ElevatedButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:layout_marginStart="28dp"
+      android:layout_marginTop="16dp"
+      android:fontFamily="@font/ns_semibold"
+      android:text="Btn Primary"
+      android:textColor="@color/primary"
+      android:textSize="16sp"
+      app:backgroundTint="@color/primary_light"
+      app:cornerRadius="8dp"
+
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:strokeWidth="2dp" />
+
+    <Button
+      android:id="@+id/elevatedButton"
+      style="@style/Widget.Material3.Button.ElevatedButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:layout_marginStart="28dp"
+      android:layout_marginTop="16dp"
+      android:fontFamily="@font/ns_semibold"
+      android:text="Btn Primary"
+      android:textColor="@color/primary"
+
+      android:textSize="16sp"
+      app:backgroundTint="@color/primary_light"
+      app:cornerRadius="8dp"
+
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <Button
+      android:id="@+id/elevatedButton4"
+      style="@style/BtnBordered"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:layout_marginTop="16dp"
+
+      android:text="Btn line"
+
+
+
+
+      app:layout_constraintEnd_toEndOf="parent"
+
+      app:layout_constraintTop_toTopOf="parent"
+      app:strokeColor="@color/primary"
+       />
+
+    <Button
+      android:id="@+id/elevatedButton2"
+      style="@style/Widget.Material3.Button.ElevatedButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:layout_marginStart="16dp"
+      android:text="Btn primary icon"
+      android:textSize="16sp"
+      app:backgroundTint="@color/primary"
+      app:cornerRadius="8dp"
+      app:icon="@drawable/svg_call"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+      android:id="@+id/elevatedButton7"
+      style="@style/Widget.Material3.Button.ElevatedButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:layout_marginStart="16dp"
+      android:text="Btn Cancel"
+      android:textColor="@color/black"
+      android:textSize="16sp"
+      app:backgroundTint="@color/tertiary"
+      app:cornerRadius="8dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintVertical_bias="0.936"
+      app:strokeColor="@color/grey_dark"
+
+      app:strokeWidth="2dp" />
+
+    <Button
+      android:id="@+id/elevatedButton3"
+      style="@style/Widget.Material3.Button.ElevatedButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:layout_marginEnd="108dp"
+      android:text="Btn primary"
+      android:textSize="16sp"
+      app:backgroundTint="@color/primary"
+      app:cornerRadius="8dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="10dp"
+    android:background="@color/white"
+
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+    <Button
+      android:id="@+id/elevatedButtonoutloiue"
+      style="@style/Widget.Material3.Button.ElevatedButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:enabled="false"
+      android:textColor="#000fff"
+      android:textColorHint="@color/white"
+      android:textSize="16sp"
+      app:backgroundTint="@color/primary"
+      app:cornerRadius="8dp"
+      app:icon="@drawable/svg_call"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+      android:id="@+id/iconButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:insetTop="0dp"
+      android:insetBottom="0dp"
+
+      android:padding="0dp"
+
+      app:icon="@drawable/svg_call"
+      android:gravity="fill"
+      app:iconPadding="0dp"
+
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="10dp"
+    android:background="@color/white"
+
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
